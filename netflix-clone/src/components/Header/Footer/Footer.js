@@ -3,6 +3,7 @@ import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import './footer.css';
+// API KEY TMDB-b9f83072405c42127ffa2de90722df77
 const Footer = () => {
   return (
     <div className="footer_outer_container">
@@ -56,3 +57,4 @@ const Footer = () => {
 };
 
 export default Footer;
+
