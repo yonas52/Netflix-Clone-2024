@@ -41,7 +41,7 @@ return str?.length > n ? str.substr(0,n-1) + '...' : str;
         </h1>
         <div className="banner_buttons">
           <button className="banner_buttons play">Play</button>
-          <button className="banner_buttons"> My List</button>
+          <button className="banner_buttons list"> My List</button>
         </div>
         <h1 className="banner_descripition">
           {truncate(movie?.overview, 150)}
