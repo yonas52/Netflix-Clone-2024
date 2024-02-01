@@ -11,20 +11,24 @@ const Banner = () => {
       try {
         
         const request = await axios.get(requests.fetchNetflixOriginals);
-        // console.log(request)
+        console.log(request)
         setmovie(
           request.data.results[
             Math.floor(Math.random() * request.data.results.length)
           ]
         );
+       
       } catch (error) {
         console.log("error", error);
       }
     })();
+  
   }, []);
+  
   function truncate(str,n){
 return str?.length > n ? str.substr(0,n-1) + '...' : str;
   }
+    //  console.log(movie)
   return (
     <div
       className="banner"
